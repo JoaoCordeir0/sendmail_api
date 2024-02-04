@@ -1,0 +1,37 @@
+{
+  "name": "sendmail",
+  "version": "1.0.0",
+  "description": "Projeto de envio de emails em massa",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "pm2 start app.js --name=sendmail",
+    "stop": "pm2 stop sendmail",
+    "restart": "pm2 restart sendmail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoCordeir0/sendmail.git"
+  },
+  "author": "JV.Cordeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoaoCordeir0/sendmail/issues"
+  },
+  "homepage": "https://github.com/JoaoCordeir0/sendmail#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",    
+    "mysql2": "^3.6.0",
+    "nodemailer": "^6.9.7",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
